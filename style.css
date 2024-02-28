@@ -20,7 +20,7 @@ body {
     flex: 2;
     margin: auto 0;
 
-    }
+}
 
 .profile a {
     text-decoration: none;
@@ -113,4 +113,15 @@ li#hsc {
 ul {
     padding-left: 20px;
     list-style: square;
+}
+
+.github>a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.github>a:hover {
+    text-decoration: none;
+    color: red;
+    transition: 1000ms;
 }
