@@ -138,6 +138,6 @@ footer>div>a {
 
 footer>div>a:hover {
     text-decoration: none;
-    color: greenyellow;
-    transition: 500ms;
+    color: red;
+    transition: 1000ms;
 }
