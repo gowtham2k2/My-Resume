@@ -100,18 +100,14 @@ li#hsc {
     margin-top: 0px;
 }
 
-.interests {
+.interests,
+.certificates,
+.projects,
+.internships {
     background-color: #3B3B3B;
     color: #fff;
     padding: 20px;
 }
-
-.certificates {
-    background-color: #3B3B3B;
-    color: #fff;
-    padding: 20px;
-}
-
 
 
 ul {
