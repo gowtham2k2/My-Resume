@@ -6,23 +6,24 @@ html {
 }
 
 body {
-    background-color: #fff;
-    width: 800px;
-    margin: 0 auto;
+    background-color: #8695a6;
+    margin-bottom: 0;
 }
 
 .profile {
     background-color: #3B3B3B;
-    font-size: 1.5rem;
     color: #fff;
     height: 200px;
     display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile>h1 {
-    flex: 2;
-    margin: auto 0;
-
+    font-size: 4rem;
+    text-align: center;
 }
 
 .profile a {
@@ -57,17 +58,14 @@ body {
 .pfp {
     height: 100px;
     width: 100px;
-    border: 3px solid white !important;
-    border: 3px solid red;
     border-radius: 50%;
-    margin: auto 50px auto 100px;
 }
 
-.scope {
-    padding: 10px;
+.scope>p {
+    padding: 20px;
     margin: 0 auto;
-    background-color: #fff;
-    color: gray;
+    background-color: #8695a6;
+    color: rgb(32, 32, 32);
     text-align: center;
     font-weight: 900;
 
@@ -78,11 +76,6 @@ body {
     background-color: #3B3B3B;
     color: white;
 
-}
-
-.education li#sslc,
-li#hsc {
-    width: 600px;
 }
 
 .keySkills {
@@ -115,23 +108,66 @@ ul {
     list-style: square;
 }
 
-footer>div {
+footer {
     background-color: #3B3B3B;
-    padding: 0 20px 0 20px;
-    color: #fff;
+    height: 25px;
+    color: #8695a6;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+footer>* {
+
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
 
 }
 
-footer>div>a {
-    text-decoration: none;
-    color: #fff;
+footer>.github:hover {
+    cursor: pointer;
+    color: rgb(200, 150, 247);
+    transition: 500ms;
 }
 
-footer>div>a:hover {
-    text-decoration: none;
-    color: violet;
-    transition: 1000ms;
+footer .fa {
+    font-size: 20px;
+}
+
+
+@media(max-width: 680px) {
+
+
+    .profile {
+        gap: 10px;
+    }
+
+    .profile>h1 {
+        font-size: 2rem;
+        flex-basis: 200px;
+        max-width: 200px;
+        flex-grow: 1;
+    }
+
+    .card {
+        font-size: .8rem;
+    }
+
+    .keySkills {
+        height: 120px;
+        width: 120px;
+        font-size: .7rem;
+
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+
+    footer .fa {
+        font-size: 14px;
+    }
+
 }
