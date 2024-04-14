@@ -13,18 +13,18 @@ if (mainHtml.clientWidth < 680) {
   });
 }
 
-var footerElements = document.querySelectorAll("footer>*");
+var contactElements = document.querySelectorAll("#intro .contacts>*");
 
-footerElements.forEach((element) => {
+contactElements.forEach((element) => {
   element.addEventListener("mouseover", () => {
-    element.classList.add("footerHover");
+    element.classList.add("contactHover");
   });
   element.addEventListener("mouseout", () => {
-    element.classList.remove("footerHover");
+    element.classList.remove("contactHover");
   });
-  if (!element.classList.contains("github")) {
+  if (element.nodeName != "A") {
     element.addEventListener("click", () => {
-      navigator.clipboard.writeText(element.lastElementChild.textContent);
+      navigator.clipboard.writeText(element.firstElementChild.textContent);
       alert("text copied");
     });
   }
