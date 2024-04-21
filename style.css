@@ -1,17 +1,23 @@
+:root {
+    --vio: #31304D;
+    --dvio: #161A30;
+    --typocolr: #F0ECE5;
+}
+
 body {
-    background-color: #31304D;
-    color: #F0ECE5;
-    font-size: ;
+    background-color: var(--vio);
+    color: var(--typocolr);
+    font-size: 1rem;
 }
 
 hr {
-    border: 3px solid #F0ECE5;
+    border: 3px solid var(--typocolr);
     margin: 0 20px;
 }
 
 /* intro section */
 #intro {
-    background-color: #161A30;
+    background-color: var(--dvio);
     color: #FEFAF6;
     padding: 80px 0;
     margin: 0 10px 10px 10px;
@@ -89,7 +95,7 @@ hr {
 
 #details .details-grid>.keySkills {
     grid-area: 1/2/2/-1;
-    background-color: #161A30;
+    background-color: var(--dvio);
     max-width: 400px;
     border-radius: 0;
 }
@@ -103,9 +109,11 @@ hr {
 }
 
 footer {
-    background-color: #161A30;
-    height: 25px;
+    background-color: var(--dvio);
+    height: 30px;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
